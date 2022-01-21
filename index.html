@@ -8,99 +8,65 @@
     <title>Hotel</title>
 </head>
 <body>
+    <div id="menu" class="sidenav">
+        <a data-action="save">Добавить</a>
+        <a data-action="load">Изменить</a>
+        <a data-action="search">Наряд</a>
+        <a data-action="save">Фильтр</a>
+      </div>
     <div class="viewport">
         <ul class="viewport__main">
-            <li>
-                <select class="select" name="select">
-                    <option value="value1"  data-filter="" selected>Номер заявки</option>
-                    <option value="value2" data-filter="">Номер заявки</option>
-                    <option value="value3" data-filter="">Номер заявки</option>
-                  </select>
-            </li>
-            <li>
-                <select class="select" name="select">
-                    <option value="value1"  data-filter="" selected>Дата создания</option>
-                    <option value="value2" data-filter="">Дата создания</option>
-                    <option value="value3" data-filter="">Дата создания</option>
-                  </select>
-            </li>
-            <li>
-                <select class="select" name="select">
-                    <option value="value1"  data-filter="" selected>Корпус</option>
-                    <option value="value2" data-filter="">Корпус</option>
-                    <option value="value3" data-filter="">Корпус</option>
-                  </select>
-            </li>
-            <li>
-                <select class="select" name="select">
-                    <option value="value1"  data-filter="" selected>Этаж</option>
-                    <option value="value2" data-filter="">Этаж</option>
-                    <option value="value3" data-filter="">Этаж</option>
-                  </select>
-            </li>
-            <li>
-                <select class="select" name="select">
-                    <option value="value1"  data-filter="" selected>Комната</option>
-                    <option value="value2" data-filter="">Комната</option>
-                    <option value="value3" data-filter="">Комната</option>
-                  </select>
-            </li>
-            <li>
-                <select class="select" name="select">
-                    <option value="value1"  data-filter="" selected>Заявитель</option>
-                    <option value="value2" data-filter="">Заявитель</option>
-                    <option value="value3" data-filter="">Заявитель</option>
-                  </select>
-            </li>
-            <li>
-                <select class="select" name="select">
-                    <option value="value1"  data-filter="" selected>Проблема</option>
-                    <option value="value2" data-filter="">Проблема</option>
-                    <option value="value3" data-filter="">Проблема</option>
-                  </select>
-            </li>
-            <li>
-                <select class="select" name="select">
-                    <option value="value1"  data-filter="" selected>Дежурный</option>
-                    <option value="value2" data-filter="">Дежурный</option>
-                    <option value="value3" data-filter="">Дежурный</option>
-                  </select>
-            </li>
-            <li>
-                <select class="select" name="select">
-                    <option value="value1"  data-filter="" selected>Отдел выполнения</option>
-                    <option value="value2" data-filter="">Отдел выпо</option>
-                    <option value="value3" data-filter="">Отдел выпол</option>
-                  </select>
-            </li>
-            <li>
-                <select class="select" name="select">
-                    <option value="value1"  data-filter="" selected>Статус заявки</option>
-                    <option value="value2" data-filter="">Статус заявки</option>
-                    <option value="value3" data-filter="">Статус заявки</option>
-                  </select>
-            </li>
-            <li>
-                <select class="select" name="select">
-                    <option value="value1"  data-filter="" selected>Дата выполнения</option>
-                    <option value="value2" data-filter="">Дата выпо</option>
-                    <option value="value3" data-filter="">Дата вып</option>
-                  </select>
-            </li>
-           </ul>
-           <ul class="viewport__list">
-            <li><a class="" href="#" data-cat="item">Номер заявки</a></li>
-            <li><a class="" href="#" data-cat="date">Дата создания</a></li>
-            <li><a class="" href="#" data-cat="housing">Корпус</a></li>
-            <li><a class="" href="#" data-cat="floor">Этаж</a></li>
-            <li><a class="" href="#" data-cat="room">Комната</a></li>
-            <li><a class="" href="#" data-cat="autor">Заявитель</a></li>
-            <li><a class="" href="#" data-cat="trouble">Проблема</a></li>
-            <li><a class="" href="#" data-cat="duty">Дежурный</a></li>
-            <li><a class="" href="#" data-cat="departement">Отдел выполнения</a></li>
-            <li><a class="" href="#" data-cat="Status">Статус заявки</a></li>
-            <li><a class="" href="#" data-cat="dateoff">Дата выполнения</a></li>
-           </ul>
+            <li>Номер заявки</li>
+            <li>Дата создания</li>
+            <li>Корпус</li>
+            <li>Этаж</li>
+            <li>Комната</li>
+            <li>Заявитель</li>
+            <li>Проблема</li>
+            <li>Дежурный</li>
+            <li>Отдел выполнения</li>
+            <li>Статус</li>
+            <li>Дата выполнения</li>
+        </ul>
+        <ul class="viewport__list">
+            <li><a class="" href="#" id="item" data-cat="item"></a></li>
+            <li><a class="" href="#" id="date" data-cat="date">20.01.2022</a></li>
+            <li><a class="" href="#" id="housing" data-cat="housing">2</a></li>
+            <li><a class="" href="#" id="floor" data-cat="floor">3</a></li>
+            <li><a class="" href="#" id="room" data-cat="room">322</a></li>
+            <li><a class="" href="#" id="autor" data-cat="autor">Ивахин</a></li>
+            <li><a class="" href="#" id="trouble" data-cat="trouble">Не работает душ</a></li>
+            <li><a class="" href="#" id="duty" data-cat="duty">Ивахин</a></li>
+            <li><a class="" href="#" id="departement" data-cat="departement">Сантехник</a></li>
+            <li><a class="" href="#" id="status" data-cat="status"></a></li>
+            <li><a class="" href="#" id="dateoff" data-cat="dateoff"></a></li>
+        </ul>
+        <ul class="viewport__list">
+            <li><a class="" href="#" id="item" data-cat="item"></a></li>
+            <li><a class="" href="#" id="date" data-cat="date">20.01.2022</a></li>
+            <li><a class="" href="#" id="housing" data-cat="housing">2</a></li>
+            <li><a class="" href="#" id="floor" data-cat="floor">14</a></li>
+            <li><a class="" href="#" id="room" data-cat="room">1423</a></li>
+            <li><a class="" href="#" id="autor" data-cat="autor">Петров</a></li>
+            <li><a class="" href="#" id="trouble" data-cat="trouble">Не работает свет</a></li>
+            <li><a class="" href="#" id="duty" data-cat="duty">Сидоров</a></li>
+            <li><a class="" href="#" id="departement" data-cat="departement">Электрик</a></li>
+            <li><a class="" href="#" id="status" data-cat="status"></a></li>
+            <li><a class="" href="#" id="dateoff" data-cat="dateoff"></a></li>
+        </ul>
+        <ul class="viewport__list">
+            <li><a class="" href="#" id="item" data-cat="item"></a></li>
+            <li><a class="" href="#" id="date" data-cat="date">20.01.2022</a></li>
+            <li><a class="" href="#" id="housing" data-cat="housing">1</a></li>
+            <li><a class="" href="#" id="floor" data-cat="floor">7</a></li>
+            <li><a class="" href="#" id="room" data-cat="room">732</a></li>
+            <li><a class="" href="#" id="autor" data-cat="autor">Душный</a></li>
+            <li><a class="" href="#" id="trouble" data-cat="trouble">Не работает интернет</a></li>
+            <li><a class="" href="#" id="duty" data-cat="duty">Гаврилюк</a></li>
+            <li><a class="" href="#" id="departement" data-cat="departement">ИТ</a></li>
+            <li><a class="" href="#" id="status" data-cat="status"></a></li>
+            <li><a class="" href="#" id="dateoff" data-cat="dateoff"></a></li>
+        </ul>
     </div>
       <script src="js/main.js"></script>
       <script src="js/select.js"></script>
