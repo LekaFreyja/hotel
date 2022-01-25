@@ -8,40 +8,138 @@
     <title>Hotel</title>
 </head>
 <body>
+    <header>
+        <section class="navmenu">
+            <div class="sidenav__form hide">
+                <form class="sidenav__form_flex" action="" method="">
+                    <p>Пожалуйста, заполните форму. Обязательные поля помечены <em>*</em></p>
+                    <div>
+                        <label for="name">Заявитель <em>*</em></label>
+                        <input id="name" type="text">
+                        <label for="roomtrouble">Комната <em>*</em></label>
+                        <input id="roomtrouble" type="text">
+                    </div>
+                    <div>
+                        <label for="floortrouble" type="text">Этаж <em>*</em></label> 
+                        <input id="floortrouble" type="text">
+                    </div>
+                    <div>
+                        <label for="phone">Проблема <em>*</em></label> 
+                        <select id="phone" name="phone">
+                            <optgroup label="Комната">
+                                <option value="iphone 6s">Сломался душ</option>
+                                <option value="iphone 6s plus">Сломался телевизор</option>
+                                <option value="iphone 5se">Нет интернета</option>
+                            </optgroup>
+                            <optgroup label="Общее">
+                                <option value="lumia 950">Не работает принтер</option>
+                                <option value="lumia 950 xl">Не работает эл. замок</option>
+                                <option value="lumia 650">Сломался компьютер</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div id="menu" class="sidenav">
+                <a data-action="save">Добавить</a>
+                <a data-action="load">Изменить</a>
+                <a data-action="search">Наряд</a>
+            </div>
+        </section>
+    </header>
+    <section class="header">
+        <div class="container">
+            <table id="maintable" class="select-list_main">
+                <tr data-action="selectlistmain" class="select-table_main">
+                  <td data-action="selectlistmain"><h4 data-action="selectlistmain">Номер заявки</h4></td>
+                  <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дата создания</h4></td>
+                  <td data-action="selectlistmain"><h4 data-action="selectlistmain">Корпус</h4></td>
+                  <td data-action="selectlistmain"><h4 data-action="selectlistmain">Этаж</h4></td>
+                  <td data-action="selectlistmain"><h4 data-action="selectlistmain">Комната</h4></td>
+                  <td data-action="selectlistmain"><h4 data-action="selectlistmain">Заявитель</h4></td>
+                  <td data-action="selectlistmain"><h4 data-action="selectlistmain">Проблема</h4></td>
+                  <td data-action="selectlistmain"><h4 data-action="selectlistmain">Отдел выполнения</h4></td>
+                  <td data-action="selectlistmain"><h4 data-action="selectlistmain">Статус</h4></td>
+                  <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дата выполнения</h4></td>
+                </tr>
+              </table>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <table id="maintabl" class="select-list_main">
+                <tr data-action="1" class="select-table_main">
+                  <td data-action="1"><h4 data-action="1" data-item="">Номер заявки</h4></td>
+                  <td data-action="1"><h4 data-action="1" data-date="">Дата создания</h4></td>
+                  <td data-action="1"><h4 data-action="1" data-housing="">Корпус</h4></td>
+                  <td data-action="1"><h4 data-action="1" data-floor="">Этаж</h4></td>
+                  <td data-action="1"><h4 data-action="1" data-room="">Комната</h4></td>
+                  <td data-action="1"><h4 data-action="1" data-autor="">Заявитель</h4></td>
+                  <td data-action="1"><h4 data-action="1" data-trouble="">Проблема</h4></td>
+                  <td data-action="1"><h4 data-action="1" data-departament="">Отдел выполнения</h4></td>
+                  <td data-action="1"><h4 data-action="1" data-status="">Статус</h4></td>
+                  <td data-action="1"><h4 data-action="1" data-dateoff="">Дата выполнения</h4></td>
+                </tr>
+              </table>
+        </div>
+    </section>
+    <!--<div class="sidenav__form hide">
+        <form class="sidenav__form_flex" action="" method="">
+            <p>Пожалуйста, заполните форму. Обязательные поля помечены <em>*</em></p>
+                <label for="name">Заявитель <em>*</em></label>
+                <input id="name"><br>
+                <label for="roomtrouble">Комната <em>*</em></label>
+                <input id="roomtrouble"><br>
+                <label for="floortrouble">Этаж <em>*</em></label> 
+                <input id="floortrouble">
+                <label for="phone">Проблема <em>*</em></label> 
+            <select id="phone" name="phone">
+                <optgroup label="Apple">
+                    <option value="iphone 6s">iPhone 6S</option>
+                    <option value="iphone 6s plus">iPhone 6S Plus</option>
+                    <option value="iphone 5se">iPhone 5SE</option>
+                </optgroup>
+                <optgroup label="Microsoft">
+                    <option value="lumia 950">Lumia 950</option>
+                    <option value="lumia 950 xl">Lumia 950 XL</option>
+                    <option value="lumia 650">Lumia 650</option>
+                </optgroup>
+            </select>
+        </form>
+    </div>
     <div id="menu" class="sidenav">
         <a data-action="save">Добавить</a>
         <a data-action="load">Изменить</a>
         <a data-action="search">Наряд</a>
-        <a data-action="save">Фильтр</a>
       </div>
-    <div class="viewport">
+    <div id="list" class="viewport">
         <ul class="viewport__main">
-            <li>Номер заявки</li>
-            <li>Дата создания</li>
-            <li>Корпус</li>
-            <li>Этаж</li>
-            <li>Комната</li>
-            <li>Заявитель</li>
-            <li>Проблема</li>
-            <li>Дежурный</li>
-            <li>Отдел выполнения</li>
-            <li>Статус</li>
-            <li>Дата выполнения</li>
+            Номер заявки
+            Дата создания
+            Корпус
+            Этаж
+            Комната
+            Заявитель
+            Проблема
+            Дежурный
+            Отдел выполнения
+            Статус
+            Дата выполнения
         </ul>
-        <ul class="viewport__list">
-            <li><a class="" href="#" id="item" data-cat="item"></a></li>
-            <li><a class="" href="#" id="date" data-cat="date">20.01.2022</a></li>
-            <li><a class="" href="#" id="housing" data-cat="housing">2</a></li>
-            <li><a class="" href="#" id="floor" data-cat="floor">3</a></li>
-            <li><a class="" href="#" id="room" data-cat="room">322</a></li>
-            <li><a class="" href="#" id="autor" data-cat="autor">Ивахин</a></li>
-            <li><a class="" href="#" id="trouble" data-cat="trouble">Не работает душ</a></li>
-            <li><a class="" href="#" id="duty" data-cat="duty">Ивахин</a></li>
-            <li><a class="" href="#" id="departement" data-cat="departement">Сантехник</a></li>
-            <li><a class="" href="#" id="status" data-cat="status"></a></li>
-            <li><a class="" href="#" id="dateoff" data-cat="dateoff"></a></li>
+        <ul data-action="list1" id='list1' class="viewport__list">
+            <li><a data-action="list1"  class="" href="#" id="item" data-cat="item">
+            <li><a data-action="list1"  class="" href="#" id="date" data-cat="date">20.01.2022
+            <li><a data-action="list1"  class="" href="#" id="housing" data-cat="housing">2
+            <li><a data-action="list1"  class="" href="#" id="floor" data-cat="floor">3
+            <li><a data-action="list1"  class="" href="#" id="room" data-cat="room">322
+            <li><a data-action="list1"  class="" href="#" id="autor" data-cat="autor">Ивахин
+            <li><a data-action="list1"  class="" href="#" id="trouble" data-cat="trouble">Не работает душ
+            <li><a data-action="list1"  class="" href="#" id="duty" data-cat="duty">Ивахин
+            <li><a data-action="list1"  class="" href="#" id="departement" data-cat="departement">Сантехник
+            <li><a data-action="list1"  class="" href="#" id="status" data-cat="status">
+            <li><a data-action="list1"  class="" href="#" id="dateoff" data-cat="dateoff">
         </ul>
-        <ul class="viewport__list">
+        <ul data-action="list2" id='list2' class="viewport__list">
             <li><a class="" href="#" id="item" data-cat="item"></a></li>
             <li><a class="" href="#" id="date" data-cat="date">20.01.2022</a></li>
             <li><a class="" href="#" id="housing" data-cat="housing">2</a></li>
@@ -54,7 +152,7 @@
             <li><a class="" href="#" id="status" data-cat="status"></a></li>
             <li><a class="" href="#" id="dateoff" data-cat="dateoff"></a></li>
         </ul>
-        <ul class="viewport__list">
+        <ul data-action="list3" id='list3' class="viewport__list">
             <li><a class="" href="#" id="item" data-cat="item"></a></li>
             <li><a class="" href="#" id="date" data-cat="date">20.01.2022</a></li>
             <li><a class="" href="#" id="housing" data-cat="housing">1</a></li>
@@ -66,9 +164,11 @@
             <li><a class="" href="#" id="departement" data-cat="departement">ИТ</a></li>
             <li><a class="" href="#" id="status" data-cat="status"></a></li>
             <li><a class="" href="#" id="dateoff" data-cat="dateoff"></a></li>
-        </ul>
+        </ul>-->
     </div>
       <script src="js/main.js"></script>
       <script src="js/select.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/list.js"></script>
 </body>
 </html>
