@@ -45,7 +45,6 @@ body {
     border: 1px solid #75EEFF;
     max-height: 100%;
     text-align: center;
-    
 }
 .select-table_main {
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
@@ -53,9 +52,24 @@ body {
     padding: 0;
     cursor: pointer;
 }
+.select-list_bd{
+    border-collapse: collapse;
+    border: 1px solid #75EEFF;
+    text-align: center;
+    max-height: 100%;
+}
+.select-table_bd {
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    td {
+        padding: 0px 3px;
+    }
+}
 td {
     border: 1px solid #75EEFF;
-    width: 10%;
     padding: 3px;
 
 }

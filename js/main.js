@@ -37,7 +37,7 @@ class List {
     }
 
     selectlistmain() {
-        list1.classList.toggle('bgcolor');
+        this.classList.toggle('bgcolor');
     }
 
     1() {

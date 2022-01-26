@@ -55,9 +55,30 @@ body {
   cursor: pointer;
 }
 
+.select-list_bd {
+  border-collapse: collapse;
+  border: 1px solid #75EEFF;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.select-table_bd {
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.select-table_bd td {
+  padding: 0px 3px;
+}
+
 td {
   border: 1px solid #75EEFF;
-  width: 10%;
   padding: 3px;
 }
 

@@ -49,7 +49,7 @@
     </header>
     <section class="header">
         <div class="container">
-            <table id="maintable" class="select-list_main">
+            <table id="maintable" class="select-list_main" style="margin-bottom: 15px; background: #01A8C7; border: 3px solid #75EEFF;">
                 <tr data-action="selectlistmain" class="select-table_main">
                   <td data-action="selectlistmain"><h4 data-action="selectlistmain">Номер заявки</h4></td>
                   <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дата создания</h4></td>
@@ -58,6 +58,7 @@
                   <td data-action="selectlistmain"><h4 data-action="selectlistmain">Комната</h4></td>
                   <td data-action="selectlistmain"><h4 data-action="selectlistmain">Заявитель</h4></td>
                   <td data-action="selectlistmain"><h4 data-action="selectlistmain">Проблема</h4></td>
+                  <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дежурный</h4></td>
                   <td data-action="selectlistmain"><h4 data-action="selectlistmain">Отдел выполнения</h4></td>
                   <td data-action="selectlistmain"><h4 data-action="selectlistmain">Статус</h4></td>
                   <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дата выполнения</h4></td>
@@ -68,18 +69,71 @@
     <section>
         <div class="container">
             <table id="maintabl" class="select-list_main">
-                <tr data-action="1" class="select-table_main">
-                  <td data-action="1"><h4 data-action="1" data-item="">Номер заявки</h4></td>
-                  <td data-action="1"><h4 data-action="1" data-date="">Дата создания</h4></td>
-                  <td data-action="1"><h4 data-action="1" data-housing="">Корпус</h4></td>
-                  <td data-action="1"><h4 data-action="1" data-floor="">Этаж</h4></td>
-                  <td data-action="1"><h4 data-action="1" data-room="">Комната</h4></td>
-                  <td data-action="1"><h4 data-action="1" data-autor="">Заявитель</h4></td>
-                  <td data-action="1"><h4 data-action="1" data-trouble="">Проблема</h4></td>
-                  <td data-action="1"><h4 data-action="1" data-departament="">Отдел выполнения</h4></td>
-                  <td data-action="1"><h4 data-action="1" data-status="">Статус</h4></td>
-                  <td data-action="1"><h4 data-action="1" data-dateoff="">Дата выполнения</h4></td>
-                </tr>
+                <!--<tr data-action="1" class="select-table_main">
+                  <td data-action="1" data-item="">25012022</td>
+                  <td data-action="1" data-date="">25.01.2022</td>
+                  <td data-action="1" data-housing="">1</td>
+                  <td data-action="1" data-floor="">14</td>
+                  <td data-action="1" data-room="">312</td>
+                  <td data-action="1" data-autor="">Ивахин</td>
+                  <td data-action="1" data-trouble="">Не работает душ</td>
+                  <td data-action="1" data-duty="">Дорофеев</td>
+                  <td data-action="1" data-departament="">Сантехники</td>
+                  <td data-action="1" data-status="">В работе</td>
+                  <td data-action="1" data-dateoff="">25.01.2022</td>
+                </tr>-->
+                <tr data-action="selectlistmain" class="select-table_main">
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Номер заявки</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дата создания</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Корпус</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Этаж</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Комната</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Заявитель</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Проблема</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дежурный</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Отдел выполнения</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Статус</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дата выполнения</h4></td>
+                  </tr>
+                  <tr data-action="selectlistmain" class="select-table_main">
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Номер заявки</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дата создания</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Корпус</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Этаж</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Комната</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Заявитель</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Проблема</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дежурный</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Отдел выполнения</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Статус</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дата выполнения</h4></td>
+                  </tr>
+                  <tr data-action="selectlistmain" class="select-table_main">
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Номер заявки</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дата создания</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Корпус</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Этаж</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Комната</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Заявитель</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Проблема</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дежурный</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Отдел выполнения</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Статус</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дата выполнения</h4></td>
+                  </tr>
+                  <tr data-action="selectlistmain" class="select-table_main">
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Номер заявки</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дата создания</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Корпус</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Этаж</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Комната</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Заявитель</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Проблема</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дежурный</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Отдел выполнения</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Статус</h4></td>
+                    <td data-action="selectlistmain"><h4 data-action="selectlistmain">Дата выполнения</h4></td>
+                  </tr>
               </table>
         </div>
     </section>
